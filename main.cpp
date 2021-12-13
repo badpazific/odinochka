@@ -1,7 +1,13 @@
-#include <iostream>
-
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+#include "chocolateboiler.h"
 
 int main(int argc, char** argv) {
+	
+	ChocolateBoiler *boiler = ChocolateBoiler::getInstance();
+	
+	boiler = ChocolateBoiler::getInstance();
+	boiler->fill();
+	boiler->boil();
+	boiler->drain();
+	
 	return 0;
 }
